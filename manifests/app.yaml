@@ -1,11 +1,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: current-time-api
+  name: demo
   namespace: argocd
 spec:
   source:
-    repoURL: git@github.com:Tinega-Devops/kubernetes-ci-cd-demo.git
+    repoURL: https://github.com/ash1425/kubernetes-ci-cd-demo.git
     targetRevision: main
     path: manifests
   destination:
